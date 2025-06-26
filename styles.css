@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #0f0f0f;
   color: whitesmoke;
@@ -12,17 +16,23 @@ body {
 }
 
 .header-box {
-  border-radius: 15px;
-  background: rgba(0, 0, 0, 0.6);
-  width: 95%;
-  height: 9vh;
+  width: 90%;
+  max-width: 1200px; /* impede que fique largo demais em telas grandes */
+  margin: 0 auto; /* CENTRALIZA na horizontal */
   position: fixed;
+  height: 69.6px;
   top: 20px;
-  transform: translateX(2%);
-  padding: 12px;
-  padding-left: 8px;
+  left: 0;
+  right: 0;
+  padding: 12px 8px;
   display: flex;
   align-items: center;
+  backdrop-filter: blur(3px);
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  transition: 0.8s ease;
+  transition-delay: 0.2s;
 
   .nav {
     border-radius: 15px;
@@ -31,15 +41,19 @@ body {
     display: flex;
     width: 222.88px;
     padding: 2px;
+    margin-left: 1px;
+    padding-left: 3px;
     color: rgba(245, 245, 245, 0.6);
     scrollbar-width: none;
 
     .nav-option {
       margin: 4px;
       transition: 0.3s;
+      text-decoration: none;
     }
     .nav-option:hover {
       color: whitesmoke;
+      cursor: pointer;
     }
   }
   .nav::-webkit-scrollbar {
@@ -47,15 +61,44 @@ body {
   }
 
   .logo {
-    width: 50%;
     display: flex;
     align-items: center;
     gap: 5px;
     margin-left: 20px;
+    position: absolute;
+    right: 10px;
 
     .header-logo {
       width: 50px;
       height: 50px;
+    }
+  }
+}
+.header-box.hidden {
+  top: -200px;
+  opacity: 0;
+  pointer-events: none; /* evita clicar quando invisível */
+}
+
+#introducao {
+  margin-top: 140px;
+
+  .container-main {
+    background: rgba(0, 0, 0, 0.6);
+    width: 89%;
+    height: 74vh;
+    padding: 10px;
+    max-width: 1100px;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.6);
+
+    .title {
+      font-weight: 800;
+      font-size: 1.5rem;
+      position: relative;
+      left: 30px;
+      top: 60px;
     }
   }
 }

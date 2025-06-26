@@ -9,11 +9,16 @@
   </head>
   <body>
     <header>
-      <div class="header-box">
+      <div class="header-box" id="header">
         <div class="nav">
-          <a src="" class="nav-option">Introdução</a> <br />
-          <a src="" class="nav-option">Como funciona a IA</a> <br />
-          <a src="" class="nav-option">Porque usar IA</a> <br />
+          <a class="nav-option" data-target="introducao">Introdução</a> <br />
+          <a class="nav-option" data-target="funcionamento"
+            >Como funciona a IA</a
+          >
+          <br />
+          <a class="nav-option" data-target="beneficios">Porque usar IA</a>
+          <br />
+          <a class="nav-option" data-target="fontes">Fontes</a> <br />
         </div>
         <div class="logo">
           <img src="icon.png" class="header-logo" />
@@ -21,5 +26,13 @@
         </div>
       </div>
     </header>
+
+    <section id="introducao">
+      <div class="container-main">
+        <h1 class="title" id="title"></h1>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
   </body>
 </html>
