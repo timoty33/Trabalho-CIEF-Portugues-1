@@ -2,4 +2,4 @@
 
 Fontes da História da Inteligência Artificial: 
 
-- www.site-ficticio.com (Aqui achei sobre redes neurais) <-- Desse jeito a gente já sabe onde colocar as informações
+-https://www.zendesk.com.br/blog/qual-e-a-origem-da-inteligencia-artificial/
