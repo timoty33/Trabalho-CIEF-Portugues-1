@@ -64,7 +64,7 @@ function digitar() {
       return;
     }
 
-    setTimeout(digitar, 80);
+    setTimeout(digitar, 150);
   }
 }
 
