@@ -30,8 +30,9 @@ window.addEventListener("scroll", () => {
 const frases = [
   "Você confia numa\n máquina que toma\n decisões?",
   "Máquinas que pensam.\n E aprendem.",
+  "Máquinas até erram\nmas podem \najudar muito\n - João Eder Graebin, PHD",
   "Como funciona uma\n mente artificial?",
-  "Por que a IA está \nem tudo — mesmo que você\n não perceba?",
+  "Por que a IA está \nem tudo? Mesmo que você\n não perceba?",
 ];
 
 const tituloChamativo = document.getElementById("title");

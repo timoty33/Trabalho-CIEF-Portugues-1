@@ -1,10 +1,3 @@
-Coloca a história aqui
-
-O que você já tem 
-
-
-
-
 A História da Inteligência Artificial: Das Raízes Antigas ao Futuro Próximo
 O artigo da Zendesk explora a fascinante história da inteligência artificial (IA), desmistificando a ideia de que a IA é um conceito puramente moderno. Na verdade, a busca por máquinas que simulem o pensamento humano remonta à Antiguidade, com mitos gregos sobre autômatos e lendas hebraicas sobre o Golem.
 
@@ -29,5 +22,3 @@ O Impacto da IA Hoje:
 O artigo ressalta que a IA não é mais ficção científica, mas uma realidade que permeia diversas áreas, desde a saúde e finanças até o atendimento ao cliente, sendo um dos motores da transformação digital. A Zendesk, por exemplo, utiliza a IA para otimizar a experiência do cliente, automatizar tarefas e fornecer insights valiosos.
 
 A jornada da IA é um testemunho da persistência humana em criar máquinas que não apenas realizem tarefas, mas que também simulem e ampliem a inteligência humana. O futuro da IA promete continuar revolucionando a forma como vivemos e trabalhamos.
-
-
