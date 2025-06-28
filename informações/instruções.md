@@ -7,8 +7,7 @@
 - Introdução:
 
   [x] Introdução chamativa;
-
-  - Resumo da história das Inteligências artificiais;
+  [x] Resumo da história das Inteligências artificiais;
 
 - Como funciona uma IA;
 
