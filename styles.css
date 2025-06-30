@@ -201,6 +201,44 @@ header {
   animation: girar 3s infinite;
 }
 
+#introducao .indice {
+  width: 80%;
+  margin: 0 auto;
+
+  .title-div {
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .indice-options {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .label {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  li {
+    text-decoration: underline;
+    cursor: pointer;
+    color: rgba(245, 245, 245, 0.6);
+    transition: 0.3s ease;
+  }
+  li:hover {
+    color: whitesmoke;
+  }
+}
+
 #introducao .historia-ia-main {
   width: 95%;
   margin: 0 auto;

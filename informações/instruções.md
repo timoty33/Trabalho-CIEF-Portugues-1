@@ -4,7 +4,7 @@
 
     [x] - Introdução Chamativa <-- Desse jeito
 
-- Introdução:
+- [x] Introdução: // Introdução completa com sucesso
 
   [x] Introdução chamativa;
   [x] Resumo da história das Inteligências artificiais;
