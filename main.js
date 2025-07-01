@@ -1,10 +1,14 @@
-document.querySelectorAll(".nav-option").forEach((link) => {
-  link.addEventListener("click", () => {
-    console.log("link clicado: " + link);
+document.querySelectorAll(".nav-option, .topicos li").forEach((link) => {
+  link.addEventListener("click", (event) => {
+
+    // event.preventDefault(); 
+    
     const targetId = link.dataset.target;
-    const target = document.getElementById(targetId);
-    if (target) {
-      target.scrollIntoView({ behavior: "smooth" });
+    const targetSection = document.getElementById(targetId); // Tenta encontrar uma seção principal
+
+    // Se uma seção principal for encontrada, rola para ela
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   });
 });
