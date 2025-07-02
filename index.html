@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>O que é Inteligência artificial?</title>
+    <title>O que é Inteligência Artificial?</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="icon.png" type="image/x-icon" />
   </head>
@@ -18,7 +18,6 @@
           <br />
           <a class="nav-option" data-target="beneficios">Porque usar IA</a>
           <br />
-          <a class="nav-option" data-target="fontes">Fontes</a> <br />
         </div>
         <div class="logo">
           <img src="icon.png" class="header-logo" id="cerebro-img" />
@@ -33,7 +32,9 @@
         <img class="gear-icon" src="images/Gear-icon.png" />
         <img class="ai-image" src="images/brain-3d.png" />
         <img class="engrenagens-main" src="images/engrenagens-3D.png" />
-        <p class="names">Timóteo Graebin ° João Victor ° Gabriel ° Matheus</p>
+        <p class="names">
+          Timóteo Graebin ° João Victor ° Gabriel ° Matheus ° Davi
+        </p>
       </div>
 
       <hr class="divisoria" />
@@ -50,8 +51,10 @@
               >Introdução.</label
             >
             <ul id="introducao-topicos">
-              <li data-target="">Introdução Chamativa.</li>
-              <li>História da Inteligência Artificial.</li>
+              <li data-target="introducao">Introdução Chamativa.</li>
+              <li data-target="historia-ia">
+                História da Inteligência Artificial.
+              </li>
             </ul>
           </div>
 
@@ -60,9 +63,9 @@
               >Como funciona a IA.</label
             >
             <ul id="funcionamento-topicos">
-              <li>Redes Neurais.</li>
-              <li>Tipos de Inteligências.</li>
-              <li>Como IAs são treinadas.</li>
+              <li data-target="funcionamento">Redes Neurais.</li>
+              <li data-target="tipos-ia">Tipos de Inteligências.</li>
+              <li data-target="treinamento">Como IAs são treinadas.</li>
             </ul>
           </div>
 
@@ -71,9 +74,16 @@
               >Porque usar Inteligências Artificiais.</label
             >
             <ul id="beneficios-topicos">
-              <li>Eficiência.</li>
-              <li>IAs evoluiram muito.</li>
-              <li>Problemas na utilização.</li>
+              <li data-target="beneficios">Eficiência.</li>
+              <li data-target="evolucao">IAs evoluiram muito.</li>
+              <li data-target="problemas">Problemas na utilização.</li>
+            </ul>
+          </div>
+
+          <div>
+            <label class="label" for="fontes"> Fontes. </label>
+            <ul id="fontes">
+              <li><a href="informações/fontes.md">Fontes</a></li>
             </ul>
           </div>
         </div>
@@ -81,7 +91,7 @@
 
       <hr class="divisoria" />
 
-      <div class="historia-ia-main">
+      <div class="historia-ia-main" id="historia-ia">
         <div class="title-div">
           <h1 class="title">Inteligência Artificial: Como Tudo Começou</h1>
         </div>
@@ -100,7 +110,6 @@
             das máquinas, e poucos anos depois, em 1956, nascia oficialmente o
             termo "inteligência artificial", cunhado por John McCarthy.
           </div>
-
           <img class="image" src="images/história-IA/automatos.png" />
         </div>
 
@@ -116,12 +125,11 @@
             sofisticados — foi nessa época, por exemplo, que o Deep Blue venceu
             o campeão mundial de xadrez, Garry Kasparov, em 1997.
           </div>
-
           <img class="image" src="images/história-IA/deep-blue-kasparov.png" />
         </div>
 
         <div class="historia-bloco">
-          <div class="texto normal">
+          <div class="texto colorido">
             Hoje, a inteligência artificial está em todo lugar — dos assistentes
             virtuais nos nossos celulares aos sistemas que recomendam filmes,
             ajudam médicos e até dirigem carros. E o mais impressionante é que
@@ -132,20 +140,327 @@
             vontade de criar tecnologias que pensem junto com a gente — ou até à
             nossa frente.
           </div>
-
           <img class="image" src="images/história-IA/deepseek.png" />
         </div>
       </div>
     </section>
 
-    <hr class="divisoria" />
+    <hr class="divisoria-setores" />
 
     <section id="funcionamento">
       <div class="container-main">
         <h1 class="title">Como Funciona uma IA?</h1>
         <img class="gear-icon" src="images/Gear-icon.png" />
         <img src="images/como-funciona-IA/ai-image.png" class="ai-image" />
-        <img src="images/como-funciona-IA/world.png" class="world-map-image"
+        <img src="images/como-funciona-IA/world.png" class="world-map-image" />
+      </div>
+
+      <hr class="divisoria" />
+
+      <div class="redes-neurais" id="redes-neurais">
+        <div class="title-div">
+          <h1 class="title">Como funciona o cérebro das máquinas?</h1>
+        </div>
+
+        <div class="bloco">
+          <div class="texto colorido">
+            As redes neurais, sistemas computacionais que imitam o funcionamento
+            do cérebro humano, estão revolucionando a forma como interagimos com
+            a tecnologia. Elas são compostas por "neurônios" juntos que, através
+            de algoritmos, conseguem identificar padrões e correlações em dados,
+            agrupando-os e classificando-os de forma contínua. Essa ideia de
+            máquinas que "aprendem" não é nova; em 1943, Warren McCulloch e
+            Walter Pitts já modelavam a primeira rede neural, buscando criar
+            sistemas que resolvessem problemas de maneira similar ao pensamento
+            humano. Com o tempo, o foco se refinou para tarefas específicas como
+            visão computacional, reconhecimento de voz e diagnósticos médicos.
+          </div>
+          <img
+            class="image"
+            src="images/como-funciona-IA/rede-neural-simples.png"
+          />
+        </div>
+
+        <div class="bloco">
+          <div class="texto normal">
+            O verdadeiro salto veio com o aumento exponencial do volume de
+            dados, que impulsionou o desenvolvimento do deep learning. Essa
+            evolução das redes neurais, com suas múltiplas camadas de
+            processamento, permitiu a análise e mineração de quantidades
+            massivas de informações, incluindo dados não-estruturados, abrindo
+            caminho para capacidades de aprendizado e modelagem cada vez mais
+            sofisticadas. A importância das redes neurais reside justamente em
+            sua habilidade de lidar com a complexidade do mundo real: elas
+            conseguem aprender e modelar relações não-lineares, realizar
+            generalizações e inferências, e desvendar padrões e predições
+            ocultas. Além disso, são ferramentas poderosas na detecção de
+            fraudes e na previsão de eventos raros, lidando com dados altamente
+            voláteis.
+          </div>
+          <img
+            class="image"
+            src="images/como-funciona-IA/ia-varios-dados.png"
+          />
+        </div>
+
+        <div class="bloco">
+          <div class="texto colorido">
+            Hoje, as aplicações das redes neurais são vastas e se espalham por
+            diversos setores. Elas estão presentes na detecção de fraudes em
+            cartões de crédito e na saúde, na otimização da logística, no
+            reconhecimento de caracteres e voz (base para os assistentes
+            virtuais), em diagnósticos médicos, no marketing direcionado e nas
+            previsões financeiras. Também são essenciais em sistemas de controle
+            robóticos, na previsão de demanda de energia e no controle de
+            qualidade industrial. Tipos como as Redes Convolucionais (RNCs)
+            dominam a classificação de imagens, enquanto as Recorrentes (RNRs)
+            brilham na análise de séries temporais e sentimentos. Em essência,
+            as redes neurais são a inteligência que impulsiona grande parte da
+            inovação tecnológica que vemos hoje.
+          </div>
+          <img class="image" src="images/como-funciona-IA/setores-ai.png" />
+        </div>
+
+        <div class="bloco">
+          <div class="texto normal">Como funciona uma IA, na prática:</div>
+          <img class="image" src="images/como-funciona-IA/ia-na-pratica.png" />
+        </div>
+      </div>
+
+      <hr class="divisoria" />
+
+      <div class="tipos-ia" id="tipos-ia">
+        <div class="title-div">
+          <h1 class="title">Existem diferentes tipos de máquinas?</h1>
+          <img class="gear-icon left" src="images/Gear-icon.png" />
+        </div>
+
+        <div class="bloco">
+          <div class="texto colorido">
+            Além dessas classificações por capacidade, a IA também pode ser
+            vista pela forma como opera. As Máquinas Reativas tomam decisões com
+            base em dados atuais, sem guardar memórias do passado. As Máquinas
+            com Memória Limitada, por sua vez, usam informações anteriores para
+            guiar suas escolhas futuras, como acontece em carros autônomos. Mais
+            complexas são as IAs com Teoria da Mente, que buscam entender
+            emoções e intenções. Por fim, a IA Autoconsciente explora a ideia de
+            uma IA com plena consciência de si mesma e do ambiente, um cenário
+            que, por enquanto, permanece no campo da pesquisa e da ficção.
+          </div>
+          <div class="texto normal">
+            A inteligência artificial (IA) é um campo com diferentes níveis de
+            capacidade. A Inteligência Artificial Estreita (ANI), ou IA
+            Limitada, é a mais comum no nosso dia a dia, criada para tarefas
+            específicas, como assistentes virtuais ou reconhecimento facial. Ela
+            é eficiente em seu domínio, mas não possui consciência ou uma
+            inteligência avançada. Por outro lado, a Inteligência Artificial
+            Geral (AGI), ainda um conceito teórico, teria a habilidade de
+            aprender e aplicar inteligência a qualquer tarefa intelectual, de
+            forma semelhante a um humano. Um nível ainda mais avançado e
+            especulativo é a Superinteligência Artificial (ASI), uma IA que
+            superaria a inteligência humana em todos os aspectos, incluindo
+            raciocínio e criatividade.
+          </div>
+        </div>
+
+        <div class="bloco">
+          <img class="image" src="images/como-funciona-IA/tipos-ia-image.png" />
+        </div>
+      </div>
+
+      <hr class="divisoria" />
+
+      <div class="treinamento-ia" id="treinamento">
+        <div class="title-div">
+          <h1 class="title">Como máquinas podem estudar?</h1>
+          <img class="gear-icon" src="images/Gear-icon.png" />
+        </div>
+
+        <div class="bloco">
+          <div class="texto normal">
+            O aprendizado de máquina é uma área da inteligência artificial que
+            permite aos sistemas aprenderem a realizar tarefas sem serem
+            explicitamente programados para cada uma delas. Para que isso
+            aconteça, é preciso fornecer uma grande quantidade de dados, como
+            exemplos de informações verdadeiras e falsas para um robô que
+            precisa distingui-las. Um algoritmo de aprendizado então examina
+            esses dados, buscando padrões e características que o ajudem a tomar
+            decisões. Esse processo, especialmente quando envolve redes neurais
+            profundas, é conhecido como <strong>Deep Learning</strong>.
+          </div>
+          <img class="image" src="images/como-funciona-IA/treino-de-ia.png" />
+        </div>
+
+        <div class="bloco">
+          <div class="texto colorido">
+            Embora o aprendizado de máquina seja parecido ao modo como os
+            humanos aprendem, ele ocorre em uma velocidade milhões de vezes
+            maior. Suas aplicações já são várias e presentes em nosso dia a dia,
+            incluindo reconhecimento facial, geração de textos, filtragem de
+            spam e sistemas de recomendação de vídeos. No futuro, essa
+            tecnologia promete avançar ainda mais, impulsionando carros
+            autônomos, previsões de mercado e diagnósticos médicos. É importante
+            lembrar que, apesar de sua eficácia com dados suficientes, os
+            sistemas de aprendizado de máquina ainda podem cometer erros, pois
+            seu conhecimento é baseado nos dados que lhes são fornecidos.
+          </div>
+
+          <img class="image" src="images/como-funciona-IA/ia-vs-humanos.png" />
+        </div>
+      </div>
+    </section>
+
+    <hr class="divisoria-setores" />
+
+    <section id="beneficios">
+      <div class="container-main">
+        <h1 class="title">
+          Por que você precisa utilizar <br />
+          essas máquinas agora?
+        </h1>
+        <img class="gear-icon" src="images/Gear-icon.png" />
+        <img src="images/como-funciona-IA/ai-image.png" class="ai-image" />
+        <img src="images/como-funciona-IA/world.png" class="world-map-image" />
+      </div>
+
+      <hr class="divisoria" />
+
+      <div class="eficiencia" id="eficiencia">
+        <div class="title-div">
+          <h1 class="title">Eficiência e tempo.</h1>
+        </div>
+
+        <div class="bloco">
+          <div class="texto colorido">
+            Um estudo recente da FGV EAESP destaca o impacto significativo da
+            Inteligência Artificial (IA) no desempenho das empresas. A pesquisa
+            mostra que a "capacidade de IA" — que engloba como uma empresa
+            seleciona, organiza e utiliza seus recursos relacionados à IA,
+            incluindo tecnologia, habilidades técnicas e a cultura da equipe —
+            tem um efeito positivo nos resultados da empresa. Isso é ainda mais
+            forte quando a empresa possui uma cultura fortemente orientada a
+            dados, indicando que a habilidade de lidar com informações
+            potencializa os benefícios da IA.
+          </div>
+
+          <img class="image" src="images/Beneficios/uso-da-ia-empresas.png" />
+        </div>
+
+        <div class="bloco">
+          <div class="texto normal">
+            A capacidade de IA de uma empresa não se limita apenas à tecnologia
+            em si, mas também inclui recursos profissionais, como o conhecimento
+            e as habilidades do pessoal, e recursos humanos, como uma cultura
+            que valoriza o uso de dados. O estudo demonstra que, para alcançar
+            um alto desempenho, as empresas precisam combinar de forma eficaz
+            esses diferentes tipos de recursos. Não é necessário empregar todas
+            as ferramentas disponíveis, mas sim criar uma sinergia inteligente
+            entre a infraestrutura técnica e o capital humano, otimizando o uso
+            das ferramentas de IA para suas necessidades específicas.
+          </div>
+        </div>
+
+        <div class="bloco">
+          <div class="texto normal">
+            Hoje, as IAs já são usadas para automatizar qualquer tipo de tarefa,
+            você pode fazer PIXs apenas com um áudio no Whatsapp, ou até mesmo,
+            poder navegar na web e gerar resumos de vídeos com uma mensagem. As
+            Inteligências artificiais, estão revolucionando o jeito que usamos
+            nossas ferramentas, em vários setores, como vimos nas empresas do
+            estudo da FGV EAESP. Isso, além de contribuir nos resultados de
+            forma direta, também agiliza os processos do dia-a-dia.
+          </div>
+
+          <img class="image" src="images/Beneficios/automacoes-ia.png" />
+        </div>
+      </div>
+
+      <hr class="divisoria" />
+
+      <div class="evolucao-ia" id="evolucao">
+        <div class="title-div">
+          <h1 class="title">As IAs evoluíram demais.</h1>
+        </div>
+
+        <div class="bloco">
+          <div class="texto colorido">
+            A Inteligência Artificial (IA) tem demonstrado um crescimento
+            notável, tornando-se cada vez mais inteligente e integrada ao nosso
+            dia a dia. Inicialmente baseada em regras lógicas, a IA passou por
+            uma revolução com o avanço do Big Data e o surgimento do Aprendizado
+            de Máquina (Machine Learning). Essa mudança permitiu que os sistemas
+            aprendessem com grandes volumes de dados, melhorando sua precisão
+            sem intervenção humana e impulsionando inovações em áreas como
+            reconhecimento facial, marketing personalizado e sistemas de
+            recomendação. A evolução para o Deep Learning, utilizando redes
+            neurais, aprofundou ainda mais essa capacidade, permitindo que a IA
+            lide com tarefas complexas como visão computacional e processamento
+            de linguagem natural.
+          </div>
+
+          <img class="image" src="images/Beneficios/crescimento-ia.png" />
+        </div>
+
+        <div class="bloco">
+          <div class="texto colorido">
+            Essa trajetória de aprimoramento contínuo justifica o crescente uso
+            da IA e seu potencial futuro. A IA não apenas otimiza processos
+            existentes, mas também abre portas para novas soluções e eficiências
+            em diversos setores. As IAs mais recentes, incluindo a IA
+            Generativa, são capazes de criar conteúdos inéditos, como textos e
+            imagens, o que acelera a inovação e personalização. Essa capacidade
+            de aprendizado e geração de soluções autônomas sinaliza um futuro
+            onde a IA será ainda mais crucial para o desenvolvimento de novas
+            tecnologias e para a resolução de desafios complexos, tornando-se
+            uma ferramenta indispensável para empresas e indivíduos.
+          </div>
+        </div>
+      </div>
+
+      <hr class="divisoria" />
+
+      <div class="problemas" id="problemas">
+        <div class="title-div">
+          <h1 class="title">
+            Quais são os problemas de<br />
+            usar essa tecnologia?
+          </h1>
+        </div>
+
+        <div class="bloco">
+          <div class="texto normal">
+            A grande evolução da Inteligência Artificial, traz consigo muitos
+            desafios, apesar de seus avanços notáveis. Uma das maiores
+            preocupações é o viés algorítmico, onde os sistemas de IA podem
+            aprender e replicar preconceitos presentes nos dados de treinamento,
+            levando a decisões discriminatórias em áreas sensíveis. A
+            privacidade e segurança dos dados também são questões centrais, dada
+            a vasta coleta de informações pessoais, bem como a falta de
+            transparência e responsabilidade em casos de erros ou resultados
+            inesperados gerados por algoritmos complexos. Além disso, a
+            automação impulsionada pela IA levanta debates sobre o impacto no
+            mercado de trabalho e a autonomia crescente desses sistemas.
+          </div>
+          <img class="image" src="images/Beneficios/problemas-ia.png" />
+        </div>
+
+        <div class="bloco">
+          <div class="texto colorido">
+            Para enfrentar esses problemas, diversas estratégias são criaddas. É
+            fundamental desenvolver a IA com a ética, incorporando princípios
+            éticos desde as fases iniciais do design. A criação de
+            regulamentações e padrões claros por governos e organizações é vista
+            como essencial para guiar o uso da tecnologia. Aumentar a
+            transparência dos algoritmos e estabelecer mecanismos de auditoria
+            são passos importantes para garantir a responsabilidade. Por fim, a
+            educação sobre ética em IA para profissionais e o público,
+            juntamente com a colaboração multidisciplinar entre diferentes
+            setores da sociedade, são cruciais para assegurar que a IA seja
+            desenvolvida e utilizada de forma benéfica e equitativa para todos.
+          </div>
+
+          <img class="image" src="images/Beneficios/problemas-ia-2png.webp" />
+        </div>
       </div>
     </section>
 

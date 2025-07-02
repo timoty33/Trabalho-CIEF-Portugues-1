@@ -11,9 +11,9 @@
 
 - Como funciona uma IA;
 
-  - Redes Neurais;
-  - Tipos de IA; - IAs Generativas
-  - Como IAs são treinadas?
+  [x] Redes Neurais;
+  [x] Tipos de IA; - IAs Generativas
+  [x] Como IAs são treinadas?
 
 - Porque usar IA;
 

@@ -1,14 +1,17 @@
-document.querySelectorAll(".nav-option, .topicos li").forEach((link) => {
+document.querySelectorAll("[data-target]").forEach((link) => {
   link.addEventListener("click", (event) => {
-
-    // event.preventDefault(); 
-    
     const targetId = link.dataset.target;
-    const targetSection = document.getElementById(targetId); // Tenta encontrar uma seção principal
+    const targetSection = document.getElementById(targetId);
 
-    // Se uma seção principal for encontrada, rola para ela
     if (targetSection) {
-      targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
+      const headerOffset = 100; // ajuste em pixels (quanto "mais pra cima" vai ficar)
+      const elementPosition = targetSection.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
     }
   });
 });
