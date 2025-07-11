@@ -88,7 +88,7 @@ header {
     }
 
     .header-logo-text {
-      font-family: "Montserrat";
+      font-family: "Montserrat", sans-serif;
     }
   }
 }
@@ -227,7 +227,6 @@ header {
     display: flex;
     margin: 0 auto;
     justify-content: space-around;
-    margin: 0 auto;
     margin-bottom: 20px;
   }
 
